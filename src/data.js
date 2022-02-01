@@ -120,7 +120,7 @@ const data = [
         phone: null,
     },
     {
-        img: 'https://www.o2o.be/app/uploads/2021/10/Logo-o2o.png',
+        img: null,
         name: 'Sales Team',
         title: '',
         phone: '',
