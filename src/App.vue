@@ -80,17 +80,17 @@
                 </tbody>
               </table>
             </td>
-            <td style="height:112px;direction:ltr;font-size:0px;text-align:center;padding:0px 20px;background-color:#a7d0fa !important;">
+            <td style="height:112px;direction:ltr;font-size:0px;text-align:center;padding:0px 20px;background-color:#a7d0fa !important;" colspan="2">
               <img src="https://www.o2o.be/app/uploads/2022/02/sig_logo-e1643707682115.png" width="100" height="37" />
             </td>
           </tr>
           <tr>
-            <td colspan="2" style="padding:0 20px;background-color: #ffeb9d !important;">
+            <td colspan="3" style="padding:0 20px;background-color: #ffeb9d !important;">
               <a style="color:#b67b16 !important; text-decoration: none !important; font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;" href="https://www.o2o.be/nl/fietsnieuws/deloitte-technology-fast-50-8ste-editie/">
-                "o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelstgroeiende techonolgiebedrijven in België"
+                "o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelstgroeiende techonolgiebedrijven in België" - <span style="font-size: 7pt;">lees meer</span>
               </a>
             </td>
-            <td style="background-color: #ffeb9d !important; text-align: right !important;">
+            <td style="background-color: #ffeb9d !important; text-align: right !important; width: 83px;">
               <img src="https://www.o2o.be/app/uploads/2022/02/sig_cog.png" height="82" width="83" style="vertical-align: bottom" />
             </td>
           </tr>
