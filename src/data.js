@@ -110,7 +110,7 @@ const data = [
     {
         img: 'https://www.o2o.be/app/uploads/2021/10/Tycho.png',
         name: 'Tycho Verbelen',
-        title: 'Customer Succes',
+        title: 'Customer Success',
         phone: '+32 496 231 671',
     },
     {
