@@ -121,8 +121,26 @@ const data = [
     },
     {
         img: null,
+        name: 'Mathieu Van Hoorebeke',
+        title: 'Order processing & Customer Support',
+        phone: null,
+    },
+    {
+        img: null,
+        name: 'Charlotte Dhont',
+        title: 'Growth Marketing Lead',
+        phone: null,
+    },
+    {
+        img: null,
         name: 'Sales Team',
         title: '',
+        phone: '',
+    },
+    {
+        img: null,
+        name: 'o2o team',
+        title: 'Het tofste peleton',
         phone: '',
     }
 ];
