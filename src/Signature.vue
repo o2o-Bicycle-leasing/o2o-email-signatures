@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div style="display: table;width: 100%;">
+    <br>
+    <div style="display: table;width:600px">
       <table width="600px" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="border-collapse: collapse !important; border-spacing: 0 !important;">
         <tbody>
         <tr>
@@ -96,8 +97,8 @@
         </tr>
         </tbody>
       </table>
-      <br>
-      <br>
+      <br><br><br><br><br><br>
+      <br><br><br><br><br><br>
     </div>
     <div style="height: 240px"></div>
   </div>
