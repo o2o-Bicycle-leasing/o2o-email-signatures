@@ -56,7 +56,7 @@ const data = [
     {
         img: 'https://www.o2o.be/app/uploads/2019/09/wes@2x.png',
         name: 'Wes Depoorter',
-        title: 'Chief Product Officer & Creative Designer',
+        title: 'Creative Marketing Lead',
         phone: '+32 9 274 79 04',
     },
     {
