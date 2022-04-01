@@ -123,13 +123,13 @@ const data = [
         img: 'https://www.o2o.be/app/uploads/2022/03/Mathieu-1.png',
         name: 'Mathieu Van Hoorebeke',
         title: 'Order processing & Customer Support',
-        phone: null,
+        phone: '+32 9 274 79 20',
     },
     {
         img: 'https://www.o2o.be/app/uploads/2022/03/Charlotte.png',
         name: 'Charlotte Dhont',
         title: 'Growth Marketing Lead',
-        phone: null,
+        phone: '+32 9 274 79 19',
     },
     {
         img: null,
