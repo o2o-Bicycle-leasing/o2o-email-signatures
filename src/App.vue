@@ -11,6 +11,7 @@
       <input type="text" v-model="inputPerson.name" placeholder="Naam" />
       <input type="text" v-model="inputPerson.title" placeholder="Titel" />
       <input type="text" v-model="inputPerson.phone" placeholder="Phone" />
+      <input type="text" v-model="inputPerson.img" placeholder="Image url (wordpress upload)" />
     </div>
     <Signature :person="inputPerson" />
     <Signature v-for="(person, i) in data" :key="i" :person="person" />
@@ -29,7 +30,8 @@ export default {
       inputPerson: {
         name: null,
         phone: null,
-        title: null
+        title: null,
+        img: null
       },
       data: data,
     }
