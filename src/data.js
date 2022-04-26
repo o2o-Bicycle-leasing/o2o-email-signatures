@@ -132,6 +132,12 @@ const data = [
         phone: '+32 9 274 79 19',
     },
     {
+        img: 'https://www.o2o.be/app/uploads/2022/04/Karlijn.png',
+        name: 'Karlijn Clinckaert',
+        title: 'Onboarding & Account Manager',
+        phone: '+32 487 96 31 45',
+    },
+    {
         img: null,
         name: 'Sales Team',
         title: '',
