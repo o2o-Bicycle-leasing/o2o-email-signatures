@@ -138,6 +138,12 @@ const data = [
         phone: '+32 487 96 31 45',
     },
     {
+        img: 'https://www.o2o.be/app/uploads/2022/05/AnasZemouri.png',
+        name: 'Anas Zemmouri',
+        title: 'Web Developer',
+        phone: '+32 456 05 38 69',
+    },
+    {
         img: null,
         name: 'Sales Team',
         title: '',
