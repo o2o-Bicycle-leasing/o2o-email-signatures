@@ -14,7 +14,7 @@
       <input type="text" v-model="inputPerson.img" placeholder="Image url (wordpress upload)" />
     </div>
     <Signature :person="inputPerson" />
-    <Signature v-for="(person, i) in data" :key="i" :person="person" />
+    <Signature v-for="(person, i) in data" :key="i" :person="person" :html="true" />
   </div>
 </template>
 

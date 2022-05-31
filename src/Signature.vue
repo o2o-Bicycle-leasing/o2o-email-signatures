@@ -1,7 +1,7 @@
 <template>
   <div>
     <br>
-    <div style="display: table;width:600px">
+    <div style="display: table;width:600px" ref="html">
       <table width="600px" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="border-collapse: collapse !important; border-spacing: 0 !important;">
         <tbody>
         <tr>
@@ -100,6 +100,7 @@
       <br><br><br><br><br><br>
       <br><br><br><br><br><br>
     </div>
+    <textarea v-if="html" v-model="content" disabled style="width: 600px; height: 300px;" />
     <div style="height: 240px"></div>
   </div>
 </template>
@@ -107,7 +108,15 @@
 <script>
   export default {
     name: "Signature",
-    props: ['person'],
+    props: ['person', 'html'],
+    data() {
+      return {
+        content: '',
+      }
+    },
+    mounted() {
+      this.content = this.$refs.html.innerHTML;
+    },
     methods: {
       hrefify(phone) {
         return 'tel:' + phone.replace(' ', '');
