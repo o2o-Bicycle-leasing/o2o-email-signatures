@@ -117,7 +117,7 @@ const data = [
         img: 'https://www.o2o.be/app/uploads/2021/12/Joyce.png',
         name: 'Joyce Van Duyvenboden',
         title: 'Order processing',
-        phone: null,
+        phone: '+32 9 274 79 22',
     },
     {
         img: 'https://www.o2o.be/app/uploads/2022/03/Mathieu-1.png',
