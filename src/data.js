@@ -114,9 +114,9 @@ const data = [
         phone: '+32 496 231 671',
     },
     {
-        img: 'https://www.o2o.be/app/uploads/2021/12/Joyce.png',
+        img: 'https://www.o2o.be/app/uploads/2022/04/Werkbestand-fotos.png',
         name: 'Joyce Van Duyvenboden',
-        title: 'Order processing',
+        title: 'Order processing & Sales Support',
         phone: '+32 9 274 79 22',
     },
     {
