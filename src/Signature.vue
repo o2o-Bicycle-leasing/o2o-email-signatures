@@ -56,7 +56,7 @@
                           <tr>
                             <td style="width:34px;white-space:nowrap !important;">
                                 <span style="font-family:Verdana,Helvetica,Arial,sans-serif;font-size:7pt;">
-                                  <span style="color:#336650 !important">Alg.:</span>
+                                  <span style="color:#336650 !important">{{ getPhoneLabelForLang(language) }}</span>
                                 </span>
                             </td>
                             <td style="width:140px;white-space:nowrap !important;">
@@ -87,8 +87,7 @@
         </tr>
         <tr>
           <td colspan="3" style="padding:8px 20px;background-color: #ffeb9d !important;width:517px;">
-            <a style="color:#b67b16 !important; text-decoration: none !important; font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;" href="https://www.o2o.be/nl/fietsnieuws/deloitte-technology-fast-50-8ste-editie/">
-              "o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelst groeiende technologiebedrijven in België" - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>
+            <a style="color:#b67b16 !important; text-decoration: none !important; font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;" :href="getUrlForLang(language)" v-html="getFooterTextForLang(language)">
             </a>
           </td>
           <td style="background-color: #ffeb9d !important; text-align: right !important; width: 83px;">
@@ -108,7 +107,7 @@
 <script>
   export default {
     name: "Signature",
-    props: ['person', 'html'],
+    props: ['person', 'html', 'language'],
     data() {
       return {
         content: '',
@@ -118,6 +117,37 @@
       this.content = this.$refs.html.innerHTML;
     },
     methods: {
+      getPhoneLabelForLang(lang) {
+        if (lang === 'fr') {
+          return 'Général:';
+        }
+
+        if (lang === 'en') {
+          return 'General:';
+        }
+
+        return "Alg.:";
+      },
+      getUrlForLang(lang) {
+        if (lang === 'fr') {
+          return "https://www.o2o.be/fr/nouvelles/technology-fast-50-de-deloitte/";
+        }
+        if (lang === 'en') {
+          return "https://www.o2o.be/en/news/deloitte-technology-fast-50/";
+        }
+
+        return "https://www.o2o.be/nl/fietsnieuws/deloitte-technology-fast-50-8ste-editie/";
+      },
+      getFooterTextForLang(lang) {
+        if (lang === 'fr') {
+          return `"o2o arrive en tête du Technology Fast 50 2021 de Deloitte, la liste des cinquante entreprises technologiques à la croissance le plus rapide en Belgique" - <span style="font-size: 7pt; text-decoration: underline;">en savoire plus</span>`;
+        }
+        if (lang === 'en') {
+          return `"o2o comes out on top in Deloitte's 2021 Technology Fast 50, the list of the fifty fastest-growing technology companies in Belgium" - <span style="font-size: 7pt; text-decoration: underline;">read morer</span>`;
+        }
+
+        return `"o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelst groeiende technologiebedrijven in België" - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>`;
+      },
       hrefify(phone) {
         return 'tel:' + phone.replace(' ', '');
       }

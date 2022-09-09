@@ -148,12 +148,6 @@ const data = [
         name: 'Sales Team',
         title: '',
         phone: '',
-    },
-    {
-        img: null,
-        name: 'o2o team',
-        title: 'Het tofste peleton',
-        phone: '',
     }
 ];
 

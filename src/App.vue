@@ -13,8 +13,35 @@
       <input type="text" v-model="inputPerson.phone" placeholder="Phone" />
       <input type="text" v-model="inputPerson.img" placeholder="Image url (wordpress upload)" />
     </div>
+
     <Signature :person="inputPerson" />
-    <Signature v-for="(person, i) in data" :key="i" :person="person" :html="true" />
+
+    <div style="display: flex; flex-wrap: wrap; width: 1900px;"  v-for="(person, i) in data" :key="i">
+      <Signature :person="person" :html="true" language="nl" />
+      <Signature :person="person" :html="true" language="en" />
+      <Signature :person="person" :html="true" language="fr" />
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; width: 1900px;">
+      <Signature :person="{
+          img: null,
+          name: 'o2o team',
+          title: 'Het tofste peleton',
+          phone: '',
+      }" :html="true" language="nl" />
+      <Signature :person="{
+          img: null,
+          name: 'l\'equipe o2o',
+          title: 'Le peleton le plus cool',
+          phone: '',
+      }" :html="true" language="fr" />
+      <Signature :person="{
+          img: null,
+          name: 'o2o team',
+          title: 'The coolest peleton',
+          phone: '',
+      }" :html="true" language="en" />
+    </div>
   </div>
 </template>
 
