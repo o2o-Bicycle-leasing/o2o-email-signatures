@@ -143,7 +143,7 @@
           return `"o2o arrive en tête du Technology Fast 50 2021 de Deloitte, la liste des cinquante entreprises technologiques à la croissance le plus rapide en Belgique" - <span style="font-size: 7pt; text-decoration: underline;">en savoire plus</span>`;
         }
         if (lang === 'en') {
-          return `"o2o comes out on top in Deloitte's 2021 Technology Fast 50, the list of the fifty fastest-growing technology companies in Belgium" - <span style="font-size: 7pt; text-decoration: underline;">read morer</span>`;
+          return `"o2o comes out on top in Deloitte's 2021 Technology Fast 50, the list of the fifty fastest-growing technology companies in Belgium" - <span style="font-size: 7pt; text-decoration: underline;">read more</span>`;
         }
 
         return `"o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelst groeiende technologiebedrijven in België" - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>`;
