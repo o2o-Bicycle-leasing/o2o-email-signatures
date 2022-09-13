@@ -82,7 +82,7 @@
             </table>
           </td>
           <td style="width:140px;height:30px;direction:ltr;font-size:0px;text-align:center;background-color:#a7d0fa !important;" colspan="2">
-            <img src="https://www.o2o.be/app/uploads/2022/02/sig_logo-e1643707682115.png" width="70" height="26" style="max-width: 100%" />
+            <img :src="getLogoForLang(language)" width="90" :height="(language === 'nl') ? 33 : 31" style="max-width: 100%" />
           </td>
         </tr>
         <tr>
@@ -127,6 +127,16 @@
         }
 
         return "Alg.:";
+      },
+      getLogoForLang(lang) {
+        if (lang === 'fr') {
+          return "https://www.o2o.be/app/uploads/2022/09/sig_logo_fr.png";
+        }
+        if (lang === 'en') {
+          return "https://www.o2o.be/app/uploads/2022/09/sig_logo_en.png";
+        }
+
+        return "https://www.o2o.be/app/uploads/2022/02/sig_logo-e1643707682115.png";
       },
       getUrlForLang(lang) {
         if (lang === 'fr') {
