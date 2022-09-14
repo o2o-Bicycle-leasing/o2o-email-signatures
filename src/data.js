@@ -116,7 +116,7 @@ const data = [
     {
         img: 'https://www.o2o.be/app/uploads/2022/04/Werkbestand-fotos.png',
         name: 'Joyce Van Duyvenboden',
-        title: 'Order processing & Sales Support',
+        title: 'Talent Developer',
         phone: '+32 9 274 79 22',
     },
     {
