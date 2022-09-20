@@ -9,15 +9,15 @@ collections:
   - name: 'data'
     label: 'Data'
     files:
-      - name: 'signatures'
-        label: 'Signatures'
+      - label: 'Signatures'
+        name: 'signatures'
         file: 'data.json'
-          fields:
-            - label: Signatures
-              name: signatures
-              widget: list
-              fields:
-                - { label: Image, name: img, widget: string }
-                - { label: Name, name: name, widget: string }
-                - { label: Title, name: title, widget: string }
-                - { label: Phone, name: phone, widget: string }
+        fields:
+          - label: Signatures
+            name: signatures
+            widget: list
+            fields:
+              - { label: Image, name: img, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Phone, name: phone, widget: string }
