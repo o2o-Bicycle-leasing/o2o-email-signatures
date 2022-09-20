@@ -1,0 +1,20 @@
+backend:
+  name: o2o-signatures
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: 'signatures'
+    label: 'Signatures'
+    file: 'data.json'
+    fields:
+      - label: Signatures
+        name: signatures
+        widget: list
+        fields:
+          - { label: Image, name: name, widget: image }
+          - { label: Name, name: name, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Phone, name: phone, widget: string }
