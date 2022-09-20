@@ -1,5 +1,5 @@
 backend:
-  name: o2o-signatures
+  name: git-gateway
   branch: main
 
 media_folder: public/uploads
