@@ -6,15 +6,18 @@ media_folder: public/uploads
 public_folder: /uploads
 
 collections:
-  - name: 'signatures'
-    label: 'Signatures'
-    file: 'data.json'
-    fields:
-      - label: Signatures
-        name: signatures
-        widget: list
-        fields:
-          - { label: Image, name: img, widget: string }
-          - { label: Name, name: name, widget: string }
-          - { label: Title, name: title, widget: string }
-          - { label: Phone, name: phone, widget: string }
+  - name: 'data'
+    label: 'Data'
+    files:
+      - name: 'signatures'
+        label: 'Signatures'
+        file: 'data.json'
+          fields:
+            - label: Signatures
+              name: signatures
+              widget: list
+              fields:
+                - { label: Image, name: img, widget: string }
+                - { label: Name, name: name, widget: string }
+                - { label: Title, name: title, widget: string }
+                - { label: Phone, name: phone, widget: string }
