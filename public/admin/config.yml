@@ -14,7 +14,7 @@ collections:
         name: signatures
         widget: list
         fields:
-          - { label: Image, name: name, widget: image }
+          - { label: Image, name: img, widget: string }
           - { label: Name, name: name, widget: string }
           - { label: Title, name: title, widget: string }
           - { label: Phone, name: phone, widget: string }
