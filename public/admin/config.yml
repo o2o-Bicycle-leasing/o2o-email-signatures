@@ -13,6 +13,8 @@ collections:
     identifier_field: name
     extension: json
     format: json
+    editor:
+      preview: false
     fields:
       - { label: Image, name: img, widget: image }
       - { label: Name, name: name, widget: string, required: true }
