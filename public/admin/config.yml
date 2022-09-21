@@ -14,7 +14,7 @@ collections:
     extension: json
     format: json
     fields:
-      - { label: Image, name: img, widget: string }
+      - { label: Image, name: img, widget: image }
       - { label: Name, name: name, widget: string, required: true }
       - { label: Title, name: title, widget: string }
       - { label: Phone, name: phone, widget: string }
