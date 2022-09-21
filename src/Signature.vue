@@ -6,7 +6,7 @@
         <tbody>
         <tr>
           <td style="width:88px;height:88px;direction:ltr;font-size:0px;text-align:center;padding:0px;background-color:#C5ECC1 !important;"  v-if="person.img">
-            <img :src="person.img" height="88" width="88" alt=""
+            <img :src="parseImg(person.img)" height="88" width="88" alt=""
                  style="border:none;display:block;outline:none;height:88px;width:88px;padding-left:8px;object-fit: cover;border-radius: 50%;"
                  class="CToWUd">
           </td>
@@ -147,6 +147,13 @@
         }
 
         return "https://www.o2o.be/nl/fietsnieuws/deloitte-technology-fast-50-8ste-editie/";
+      },
+      parseImg(img) {
+        if (img.includes('http')) {
+          return img;
+        }
+
+        return 'https://signatures.o2o.be' + img;
       },
       getFooterTextForLang(lang) {
         if (lang === 'fr') {
