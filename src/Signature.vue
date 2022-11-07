@@ -157,7 +157,7 @@
       },
       getFooterTextForLang(lang) {
         if (lang === 'fr') {
-          return `"o2o est à nouveau primé au Deloitte Technology Fast 50 cette année : nous sommes arrivés en tête dans la catégorie ‘Mobilité’." - <span style="font-size: 7pt; text-decoration: underline;">en savoire plus</span>`;
+          return `"o2o est à nouveau primé au Deloitte Technology Fast 50 cette année : nous sommes arrivés en tête dans la catégorie ‘Mobilité’." - <span style="font-size: 7pt; text-decoration: underline;">en savoir plus</span>`;
         }
         if (lang === 'en') {
           return `"o2o is once again among the winners of this year’s Deloitte Technology Fast 50 and comes out on top of the ‘Mobility’ category." - <span style="font-size: 7pt; text-decoration: underline;">read more</span>`;
