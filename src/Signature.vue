@@ -140,13 +140,13 @@
       },
       getUrlForLang(lang) {
         if (lang === 'fr') {
-          return "https://www.o2o.be/fr/nouvelles/technology-fast-50-de-deloitte/";
+          return "https://www.o2o.be/fr/nouvelles/o2o-vainqueur-dans-la-categorie-mobilite-du-deloitte-fast-50/";
         }
         if (lang === 'en') {
-          return "https://www.o2o.be/en/news/deloitte-technology-fast-50/";
+          return "https://www.o2o.be/en/news/o2o-winner-of-deloittes-fast-50-mobility-category/";
         }
 
-        return "https://www.o2o.be/nl/fietsnieuws/deloitte-technology-fast-50-8ste-editie/";
+        return "https://www.o2o.be/nl/fietsnieuws/o2o-wint-categorie-mobiliteit-deloitte-fast-50/";
       },
       parseImg(img) {
         if (img.includes('http')) {
@@ -157,13 +157,13 @@
       },
       getFooterTextForLang(lang) {
         if (lang === 'fr') {
-          return `"o2o arrive en tête du Technology Fast 50 2021 de Deloitte, la liste des cinquante entreprises technologiques à la croissance le plus rapide en Belgique" - <span style="font-size: 7pt; text-decoration: underline;">en savoire plus</span>`;
+          return `"o2o est à nouveau primé au Deloitte Technology Fast 50 cette année : nous sommes arrivés en tête dans la catégorie ‘Mobilité’." - <span style="font-size: 7pt; text-decoration: underline;">en savoire plus</span>`;
         }
         if (lang === 'en') {
-          return `"o2o comes out on top in Deloitte's 2021 Technology Fast 50, the list of the fifty fastest-growing technology companies in Belgium" - <span style="font-size: 7pt; text-decoration: underline;">read more</span>`;
+          return `"o2o is once again among the winners of this year’s Deloitte Technology Fast 50 and comes out on top of the ‘Mobility’ category." - <span style="font-size: 7pt; text-decoration: underline;">read more</span>`;
         }
 
-        return `"o2o komt als beste uit de bus in Deloitte's 2021 Technology Fast 50, de lijst van de vijftig snelst groeiende technologiebedrijven in België" - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>`;
+        return `"o2o valt opnieuw in de prijzen in Deloitte’s 2022 Technology Fast 50 en komt dit jaar als beste uit de bus in de categorie ‘Mobiliteit’." - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>`;
       },
       hrefify(phone) {
         return 'tel:' + phone.replace(' ', '');
