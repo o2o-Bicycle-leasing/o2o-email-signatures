@@ -2,6 +2,7 @@
   <div>
     <br>
     <div style="display: table;width:600px" ref="html">
+     <div>
       <table width="600px" role="presentation" cellspacing="0" cellpadding="0" border="0" align="left" style="border-collapse: collapse !important; border-spacing: 0 !important;">
         <tbody>
         <tr>
@@ -96,8 +97,7 @@
         </tr>
         </tbody>
       </table>
-      <br><br><br><br><br><br>
-      <br><br><br><br><br><br>
+     </div>
     </div>
     <textarea v-if="html" v-model="content" disabled style="width: 600px; height: 300px;" />
     <div style="height: 240px"></div>
@@ -157,13 +157,13 @@
       },
       getFooterTextForLang(lang) {
         if (lang === 'fr') {
-          return `"o2o est à nouveau primé au Deloitte Technology Fast 50 cette année : nous sommes arrivés en tête dans la catégorie ‘Mobilité’." - <span style="font-size: 7pt; text-decoration: underline;">en savoir plus</span>`;
+          return `"o2o est à nouveau primé au Deloitte Technology Fast 50 2022 : nous sommes arrivés en tête dans la catégorie 'Mobilité' pour la seconde année consécutive." - <span style="font-size: 7pt; text-decoration: underline;">lisez notre blog</span>`;
         }
         if (lang === 'en') {
-          return `"o2o is once again among the winners of this year’s Deloitte Technology Fast 50 and comes out on top of the ‘Mobility’ category." - <span style="font-size: 7pt; text-decoration: underline;">read more</span>`;
+          return `"o2o is once again among the winners of this year's Deloitte Technology Fast 50 and comes out on top of the 'Mobility' category for the second year in a row." - <span style="font-size: 7pt; text-decoration: underline;">read our blog</span>`;
         }
 
-        return `"o2o valt opnieuw in de prijzen in Deloitte’s 2022 Technology Fast 50 en komt dit jaar als beste uit de bus in de categorie ‘Mobiliteit’." - <span style="font-size: 7pt; text-decoration: underline;">lees meer</span>`;
+        return `"o2o valt dit jaar opnieuw in de prijzen in Deloitte’s Technology Fast 50 en komt voor het tweede jaar op rij als beste uit de bus in de categorie ‘Mobiliteit’." - <span style="font-size: 7pt; text-decoration: underline;">lees meer in onze blog</span>`;
       },
       hrefify(phone) {
         return 'tel:' + phone.replace(' ', '');
