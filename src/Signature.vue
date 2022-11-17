@@ -163,7 +163,7 @@
           return `"o2o is once again among the winners of this year's Deloitte Technology Fast 50 and comes out on top of the 'Mobility' category for the second year in a row." - <span style="font-size: 7pt; text-decoration: underline;">read our blog</span>`;
         }
 
-        return `"o2o valt dit jaar opnieuw in de prijzen in Deloitte’s Technology Fast 50 en komt voor het tweede jaar op rij als beste uit de bus in de categorie ‘Mobiliteit’." - <span style="font-size: 7pt; text-decoration: underline;">lees meer in onze blog</span>`;
+        return `"o2o valt dit jaar opnieuw in de prijzen in Deloitte’s Technology Fast 50 en komt voor het tweede jaar op rij als beste uit de bus in de categorie ‘Mobiliteit’." - <span style="font-size: 7pt; text-decoration: underline;">lees onze blog</span>`;
       },
       hrefify(phone) {
         return 'tel:' + phone.replace(' ', '');
