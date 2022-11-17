@@ -88,7 +88,7 @@
         </tr>
         <tr>
           <td colspan="3" style="padding:8px 20px;background-color: #ffeb9d !important;width:517px;">
-            <a style="color:#b67b16 !important; text-decoration: none !important; font-family:Verdana,Helvetica,Arial,sans-serif;font-size:9pt;" :href="getUrlForLang(language)" v-html="getFooterTextForLang(language)">
+            <a style="color:#b67b16 !important; text-decoration: none !important; font-family:Verdana,Helvetica,Arial,sans-serif;font-size:8pt;" :href="getUrlForLang(language)" v-html="getFooterTextForLang(language)">
             </a>
           </td>
           <td style="background-color: #ffeb9d !important; text-align: right !important; width: 83px;">
