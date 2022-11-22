@@ -26,19 +26,19 @@
       <Signature :person="{
           img: null,
           name: 'o2o team',
-          title: 'Het tofste peleton',
+          title: 'Het tofste peloton',
           phone: '',
       }" :html="true" language="nl" />
       <Signature :person="{
           img: null,
           name: 'l\'equipe o2o',
-          title: 'Le peleton le plus cool',
+          title: 'Le peloton le plus cool',
           phone: '',
       }" :html="true" language="fr" />
       <Signature :person="{
           img: null,
           name: 'o2o team',
-          title: 'The coolest peleton',
+          title: 'The coolest peloton',
           phone: '',
       }" :html="true" language="en" />
     </div>
