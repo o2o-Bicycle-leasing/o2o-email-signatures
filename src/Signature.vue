@@ -85,15 +85,15 @@
           <td style="width:140px;height:30px;direction:ltr;font-size:15px;text-align:center;background-color:#a7d0fa !important;" colspan="2">
             <table style="width: 100%;">
               <tr>
-                <td style="height:65px;line-height: 15px;vertical-align: bottom;">
+                <td style="height:65px;line-height: 18px;vertical-align: bottom;">
                   <img :src="getLogo()" style="width:90px;max-width: 100%" />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.linkedin.com/company/o2o-bvba/" target="_blank" rel="noopener" title="o2o op LinkedIn" class="social"><img width="16" height="16" :src="parseImg('/icons/linkedin.png')" /> </a>
-                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" class="social" style="line-height: 19px;vertical-align: bottom;font-size: 13px;"><img width="16" height="16" :src="parseImg('/icons/facebook.png')" /> </a>
-                  <a href="https://www.instagram.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Instagram" class="social"><img width="16" height="16" :src="parseImg('/icons/instagram.png')" /></a>
+                  <a href="https://www.linkedin.com/company/o2o-bvba/" target="_blank" rel="noopener" title="o2o op LinkedIn" style="margin:3px;"><img width="16" height="16" :src="parseImg('/icons/linkedin.png')" /> </a>
+                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" style="margin: 3px; line-height: 19px;vertical-align: bottom;font-size: 13px;"><img width="13" height="13" :src="parseImg('/icons/facebook.png')" /> </a>
+                  <a href="https://www.instagram.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Instagram" style="margin: 3px;"><img width="16" height="16" :src="parseImg('/icons/instagram.png')" /></a>
                 </td>
               </tr>
             </table>
@@ -178,11 +178,3 @@
   }
 </script>
 <style>
-@import 'theme/fontawesome-all.min.css';
-
-.social {
-  margin:3px;
-  color:#0025D7;
-  height: 16px;
-}
-</style>
