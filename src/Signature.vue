@@ -91,9 +91,9 @@
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.linkedin.com/company/o2o-bvba/" target="_blank" rel="noopener" title="o2o op LinkedIn" class="social"> <i class="fab fa-linkedin-in"></i> </a>
-                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" class="social" style="line-height: 19px;vertical-align: bottom;font-size: 13px;"> <i class="fab fa-facebook-f"></i> </a>
-                  <a href="https://www.instagram.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Instagram" class="social"> <i class="fab fa-instagram"></i> </a>
+                  <a href="https://www.linkedin.com/company/o2o-bvba/" target="_blank" rel="noopener" title="o2o op LinkedIn" class="social"><img width="16" height="16" :src="parseImg('/icons/linkedin.png')" /> </a>
+                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" class="social" style="line-height: 19px;vertical-align: bottom;font-size: 13px;"><img width="16" height="16" :src="parseImg('/icons/facebook.png')" /> </a>
+                  <a href="https://www.instagram.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Instagram" class="social"><img width="16" height="16" :src="parseImg('/icons/instagram.png')" /></a>
                 </td>
               </tr>
             </table>
