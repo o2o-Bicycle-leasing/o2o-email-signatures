@@ -92,7 +92,7 @@
               <tr>
                 <td>
                   <a href="https://www.linkedin.com/company/o2o-bvba/" target="_blank" rel="noopener" title="o2o op LinkedIn" style="margin:3px;"><img width="16" height="16" :src="parseImg('/icons/linkedin.png')" /> </a>
-                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" style="margin: 3px; line-height: 19px;vertical-align: bottom;font-size: 13px;"><img width="13" height="13" :src="parseImg('/icons/facebook.png')" /> </a>
+                  <a href="https://www.facebook.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Facebook" style="margin: 3px; line-height: 24px;vertical-align: bottom;font-size: 13px;"><img width="13" height="13" :src="parseImg('/icons/facebook.png')" /> </a>
                   <a href="https://www.instagram.com/o2o.be/" target="_blank" rel="noopener" title="o2o op Instagram" style="margin: 3px;"><img width="16" height="16" :src="parseImg('/icons/instagram.png')" /></a>
                 </td>
               </tr>
