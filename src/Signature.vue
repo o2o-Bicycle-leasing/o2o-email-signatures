@@ -15,7 +15,7 @@
                 <mj-column>
                     <mj-text font-family="Poppins" padding="0px" color="#1b1b1f" font-size="20px" font-weight="600" line-height="20px">{{ person.name }}</mj-text>
                     <mj-text font-family="Poppins" padding="0px" padding-top="4px" color="#1b1b1f" font-size="13px" font-weight="400" line-height="20px">{{ person.title }}</mj-text>
-                    <mj-spacer></mj-spacer>
+                    <mj-divider border-width="1px" border-color="#eab1df" width="32px" padding="16px 0" align="left"></mj-divider>
                     <mj-text padding="0px"  color="#1b1b1f">General: <a style="color:#336650 !important; text-decoration: none !important;" href="tel:+3292964012">+32 9 296 40 12</a></mj-text>
                     <mj-text padding="0px"  color="#1b1b1f">{{ person.phone }}</mj-text>
                 </mj-column>
