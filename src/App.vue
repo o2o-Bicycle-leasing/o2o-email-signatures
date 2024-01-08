@@ -16,25 +16,11 @@
 
     <Signature :person="inputPerson" />
 
-    <div style="display: flex; flex-wrap: wrap; width: 1900px;"  v-for="(person, i) in data" :key="i">
-      <Signature :person="person" :html="true" language="nl" />
-      <Signature :person="person" :html="true" language="en" />
-      <Signature :person="person" :html="true" language="fr" />
+    <div style=""  v-for="(person, i) in data" :key="i">
+      <Signature :person="person" />
     </div>
 
-    <div style="display: flex; flex-wrap: wrap; width: 1900px;">
-      <Signature :person="{
-          img: null,
-          name: 'o2o team',
-          title: 'Het tofste peloton',
-          phone: '',
-      }" :html="true" language="nl" />
-      <Signature :person="{
-          img: null,
-          name: 'l\'equipe o2o',
-          title: 'Le peloton le plus cool',
-          phone: '',
-      }" :html="true" language="fr" />
+    <div>
       <Signature :person="{
           img: null,
           name: 'o2o team',
