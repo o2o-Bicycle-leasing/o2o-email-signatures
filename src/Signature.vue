@@ -18,7 +18,7 @@
         <mj-body css-class="no-padding">
             <mj-section padding="0px 0px 18px 0px" text-align="left">
                 <mj-column v-if="person.img" vertical-align="middle" width="120px" padding="0px 0px 20px 20px">
-                    <mj-image align="left" border-radius="120px" width="120px" padding="0" :src="parseImg(person.img, 100, 150, cover)"></mj-image>
+                    <mj-image align="left" border-radius="120px" width="120px" padding="0" :src="parseImg(person.img, 100, 150, 'cover')"></mj-image>
                 </mj-column>
                 <mj-column vertical-align="middle" padding="0px 0px 20px 20px">
                     <mj-text font-family="Poppins, Arial, sans-serif" padding="0px" color="#1b1b1f" font-size="20px" font-weight="600" line-height="20px">{{ person.name }}</mj-text>
