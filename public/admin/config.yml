@@ -17,6 +17,6 @@ collections:
       preview: false
     fields:
       - { label: Image, name: img, widget: image }
-      - { label: Name, name: name, widget: string, required: true }
+      - { label: Name, name: name, widget: string, required: true, hint: '2:3 ratio is used. minimum 100px x 150px required' }
       - { label: Title, name: title, widget: string }
       - { label: Phone, name: phone, widget: string, required: false }

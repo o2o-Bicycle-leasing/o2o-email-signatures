@@ -18,9 +18,9 @@
         <mj-body css-class="no-padding">
             <mj-section padding="0px 0px 18px 0px" text-align="left">
                 <mj-column v-if="person.img" vertical-align="middle" width="120px" padding="0px 0px 20px 20px">
-                    <mj-image align="left" border-radius="120px" width="120px" padding="0" :src="parseImg(person.img)"></mj-image>
+                    <mj-image align="left" border-radius="120px" width="120px" padding="0" :src="parseImg(person.img, 100, 150, cover)"></mj-image>
                 </mj-column>
-                <mj-column vertical-align="middle" padding="0px 0px 0px 20px">
+                <mj-column vertical-align="middle" padding="0px 0px 20px 20px">
                     <mj-text font-family="Poppins, Arial, sans-serif" padding="0px" color="#1b1b1f" font-size="20px" font-weight="600" line-height="20px">{{ person.name }}</mj-text>
                     <mj-text font-family="Poppins, Arial, sans-serif" padding="0px" padding-top="4px" color="#1b1b1f" font-size="13px" font-weight="400" line-height="20px">{{ person.title }}</mj-text>
                     <mj-divider border-width="2px" border-color="#eab1df" width="32px" padding="16px 0" align="left"></mj-divider>
@@ -31,32 +31,32 @@
             </mj-section>
             <mj-section background-color="#f5f6fe" padding="0 24px 8px" border-radius="8px">
                 <mj-column width="164px" align="left" padding="16px 0 8px">
-                  <mj-image align="left" width="164px" height="51px" padding="0" :src="parseImg('/icons/logo.png')"></mj-image>
+                  <mj-image align="left" width="135px" height="42px" padding="5px 0" :src="parseImg('/icons/logo.png')"></mj-image>
                 </mj-column>
                 <mj-column width="292px"></mj-column>
-                <mj-column width="96px" align="left" padding="16px 0 8px">
+                <mj-column width="96px" align="left" padding="20px 0 8px">
                   <mj-raw>
                     <div style="color: #47464a; font-family: Poppins, sans-serif; font-size:12px; font-weight:400; line-height:20px; text-align: left;">stay connected</div>
                     <table cellpadding="0" cellspacing="0" border="0" class="frame-7" style="border-collapse: collapse; width: 96px;">
                       <tr>
                         <td>
                           <a href="https://www.linkedin.com/company/o2o-be/" class="w-inline-block">
-                            <img :src="parseImg('/icons/linkedin.png')" width="24" height="24" alt="" class="social-media-icons" />
+                            <img :src="parseImg('/icons/linkedin.png')" width="20" height="20" alt="" style="padding: 2px; padding-left: 0px;" class="social-media-icons" />
                           </a>
                         </td>
                         <td>
                           <a href="https://www.facebook.com/o2o.be/" class="w-inline-block">
-                            <img :src="parseImg('/icons/facebook.png')" width="24" height="24" alt="" class="social-media-icons" />
+                            <img :src="parseImg('/icons/facebook.png')" width="20" height="20" alt="" style="padding: 2px;" class="social-media-icons" />
                           </a>
                         </td>
                         <td>
                           <a href="https://www.instagram.com/o2o.be/" class="w-inline-block">
-                            <img :src="parseImg('/icons/instagram.png')" width="24" height="24" alt="" class="social-media-icons" />
+                            <img :src="parseImg('/icons/instagram.png')" width="20" height="20" style="padding: 2px;" alt="" class="social-media-icons" />
                           </a>
                         </td>
                         <td>
                           <a href="https://www.youtube.com/channel/UC7BnVDfVdUoeYLuHxysmV9w/videos" class="w-inline-block">
-                            <img :src="parseImg('/icons/youtube.png')" width="24" height="24" alt="" class="social-media-icons" />
+                            <img :src="parseImg('/icons/youtube.png')" width="20" height="20" style="padding: 2px;" alt="" class="social-media-icons" />
                           </a>
                         </td>
                       </tr>
@@ -108,7 +108,7 @@
 
         return "https://www.o2o.be/nl/fietsnieuws/o2o-wint-categorie-mobiliteit-deloitte-fast-50/";
       },
-      parseImg(img) {
+      parseImg(img, w, h, fit) {
         if (!img) {
           return img;
         }
@@ -119,6 +119,10 @@
 
         if (process?.env?.NODE_ENV === 'development') {
           return 'http://localhost:8080' + img;
+        }
+
+        if (w || h || fit) {
+          return `https://signatures.o2o.be/.netlify/images?url=${img}&w=${w}&h=${h}&fit=${fit}`;
         }
 
         return 'https://signatures.o2o.be' + img;
